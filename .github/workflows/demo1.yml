@@ -3,12 +3,12 @@ on:
   pull_request:
     types: # Activity type of the event
       - opened
-  workflow_dispatch:
+  # workflow_dispatch:
   push:
     branches:
       - main
-      - 'dev-*'
-      - 'feat/**'
+      - "dev-*"
+      - "feat/**"
     paths-ignore:
       - ".github/workflows/*"
 jobs:
