@@ -4,6 +4,11 @@ on:
     types: # Activity type of the event
       - opened
   workflow_dispatch:
+  push:
+    branches:
+      - main
+      - "dev-*"
+      - "feat/**"
 jobs:
   deploy:
     runs-on: ubuntu-latest
